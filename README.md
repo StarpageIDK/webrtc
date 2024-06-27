@@ -1,1 +1,1 @@
-Вырезанные приватные части WebRTC веб приложения, React + Express + PostreSQL
+Вырезанные и недоделанные приватные части WebRTC веб приложения, React + Express + PostreSQL
