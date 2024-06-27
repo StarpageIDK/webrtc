@@ -1,0 +1,10 @@
+h{
+    font-size: 250px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    color:green;
+    -webkit-text-stroke: 4px;
+    -webkit-text-stroke-color: black;
+    font-family:cursive;
+}

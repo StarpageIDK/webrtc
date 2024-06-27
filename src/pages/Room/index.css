@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#video-grid {
+  position: fixed;
+  padding: 40px 0 220px 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  padding: 8px;
+}
+
+.avatar {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  padding: 8px;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+}
+
+.main_left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_right {
+  display: none;
+}
+
+.shown {
+  display: flex;
+  flex-direction: column;
+  flex: 0.2;
+  background-color: #242324;
+  border-left: 1px solid #3D3D42;
+}
+
+.main_videos {
+  flex-grow: 1;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.main_controls {
+  background-color: #1C1E20;
+  color: #D2D2D2;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.main_controls_block {
+  display: flex;
+}
+
+.main_header {
+  padding-top: 5px;
+  color: #F5F5F5;
+  text-align: center;
+}
+
+.main_chat_window {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.messages {
+  color: white;
+  list-style: none;
+}
+
+.main_message_container {
+  padding: 22px 12px;
+  display: flex;
+}
+
+.main_message_container input {
+  flex-grow: 1;
+  background-color: transparent;
+  border: none;
+  color: #F5F5F5;
+}
+
+.leave_meeting {
+  color: #EB534B;
+}
+
+/* Common button styles */
+.controls_button {
+  min-width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 16px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #333;
+  /* Dark gray background */
+  border: 1px solid #555;
+  /* Dark gray border */
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  margin-right: 10px;
+  /* Add margin between the buttons */
+}
+
+/* Ensure the last button doesn't have right margin */
+.controls_button:last-child {
+  margin-right: 0;
+}
+
+.controls_button:hover {
+  background-color: #555;
+  /* Slightly darker gray on hover */
+}
+
+.controls_button.muted {
+  background-color: #f44336;
+  /* Red color when muted */
+}
+
+.controls_button.muted:hover {
+  border-radius: 5px;
+  background-color: #d32f2f;
+  /* Darker red color on hover */
+}
+
+.controls_button i {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.controls_button span {
+  font-size: 14px;
+}
